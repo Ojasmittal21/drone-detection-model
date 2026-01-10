@@ -12,7 +12,7 @@ st.write("Upload an image to detect aerial objects using YOLOv8.")
 # Load model (cached so it loads once)
 @st.cache_resource
 def load_model():
-    return YOLO("model/yolov8n.pt")
+    return YOLO("model/dron.pt")
 
 model = load_model()
 
