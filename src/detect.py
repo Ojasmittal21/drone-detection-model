@@ -9,7 +9,7 @@ def run_detection():
     os.makedirs(output_dir, exist_ok=True)
 
     # Load YOLO model (drone-trained weights)
-    model = YOLO("model/yolov8n.pt")
+    model = YOLO("model/dron.pt")
 
     images = [
         img for img in os.listdir(image_dir)
